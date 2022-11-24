@@ -143,3 +143,67 @@ p.subtitle {
 .card .icon-container {
     justify-content: flex-end;
 }
+
+/* desktop */
+
+@media screen and (min-width: 600px) {
+    main {
+        width: 1100px;
+    }
+
+    .feature.container {
+        width: 1000px;
+    }
+
+    h1.title {
+        font-size: 2rem;
+    }
+    h1.title span {
+        display: block;
+    }
+
+    p.subtitle {
+        width: 400px;
+        margin-inline: auto;
+    }
+
+    .cards.container {
+        width: 1000px;
+    }
+
+    .cards {
+        margin-block: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        width: fit-content;
+        margin-bottom: 0;
+    }
+
+    .supervisor {
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .team-builder {
+        grid-column: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .karma {
+        grid-column: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .calculator {
+        grid-column: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+}
